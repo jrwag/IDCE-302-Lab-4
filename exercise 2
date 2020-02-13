@@ -1,3 +1,14 @@
+#The multi-line string was scraped from the National Weather Service Website.
+#Edit this exercise to produce the output below using string manipulation techniques:
+
+#Tonight: Clear, Low: 55 F
+#Thursday: Sunny then Chance Showers, High: 77 F
+#Friday: Sunny, High: 73 F
+#Saturday: Mostly Sunny, High: 77 F
+#Sunday: Mostly Sunny, High: 71 F
+
+#Note: Copy the below code in the edit mode to retain the multi-line string formatting. There should be 39 lines of code when pasted in Python IDLE.
+
 # -*- coding: utf-8 -*-
 # Keep the line above when running script
 # Tells python what encoding the string is stored in
