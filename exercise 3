@@ -1,1 +1,7 @@
-Create exercise 3
+Write code to extract the latitude and longitude from the URL in exercise3.py
+Output should be text that reads:
+
+Latitude: 42.2509428
+Longitude: -71.8249939
+
+Submit your script via Github: Clicking this link will create a private repository for you with instructions on how to edit the README file and your script. Remember to update the existing header in the python files. Be sure to include comments and documentation in your script to tell me what it’s doing!
