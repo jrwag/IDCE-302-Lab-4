@@ -1,3 +1,10 @@
+"""
+Name: Julia Wagner
+Date Updated: February 18, 2020
+Python 3.4
+Purpose: This code cleans up weather text pulled from the National Weather Service website.
+"""
+
 #The multi-line string was scraped from the National Weather Service Website.
 #Edit this exercise to produce the output below using string manipulation techniques:
 
@@ -39,7 +46,24 @@ forecast_list = forecast.split('\n\n')
 
 # Loop through list to make string replacements to each item
 # Remove extra whitespaces or lines for a cleaner format
+emp_all = []
 for day in forecast_list:
-    day = day.replace('\n',': ')
-    # add your code here
-    print(day)
+  day = day.replace('\n',': ')  #replaces line spaces with :
+  day =day.replace ('High', ', High') #adds commas before highs and lows
+  day =day.replace ("Low", ", Low")
+    #print(day)
+  day_splitted = split(day)  #this section adds spaces between words before a capital letter
+    #print(day_splitted)
+  emp = []
+  for char in day_splitted:
+        #print(char)
+      if char.isupper():
+            #print(" "+char)
+          emp.append(" " + char)
+      else:
+          emp.append(char)
+  emp = ''.join(emp)
+  emp_all.append(emp)
+#print(emp_all)
+for i in emp_all:
+    print(i)
