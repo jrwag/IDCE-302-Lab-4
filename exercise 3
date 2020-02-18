@@ -1,7 +1,21 @@
-Write code to extract the latitude and longitude from the URL: https://www.google.com/maps/@42.2509428,-71.8249939,17z
+"""
+Assignment: Write code to extract the latitude and longitude from the URL: https://www.google.com/maps/@42.2509428,-71.8249939,17z
 Output should be text that reads:
 
 Latitude: 42.2509428
 Longitude: -71.8249939
 
 Submit your script via Github: Clicking this link will create a private repository for you with instructions on how to edit the README file and your script. Remember to update the existing header in the python files. Be sure to include comments and documentation in your script to tell me what it’s doing!
+"""
+"""
+Name: Julia Wagner
+Date Created: February 18, 2020
+Python 3.4
+Purpose: This code extracts the latitude and longitude of a google maps url to deliver strings with latitude and longitude. It does this through calling on string indices.
+"""
+
+url= "https://www.google.com/maps/@42.2509428,-71.8249939,17z"  #Google maps url
+lat= url [29:39]                                                #index for latitude
+print ("Latitude:", lat)                                        #print latitude
+long=url [40:51]                                                #index for longitude
+print ("Longitude:", long)                                      #print longitude
